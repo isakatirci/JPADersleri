@@ -1,0 +1,25 @@
+logging:
+  level:
+    org:
+      #springframework: debug
+      hibernate:
+        SQL: debug
+        type:
+          descriptor:
+            sql:
+              BasicBinder: debug
+
+spring:
+  datasource:
+    #password: s$cret
+    url: jdbc:mysql://localhost:3306/testdb?useTimezone=true&serverTimezone=UTC&useSSL=false
+    username: root
+    #main:
+    #banner-mode: 'off'
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+
+
+
